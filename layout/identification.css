@@ -1,0 +1,134 @@
+body, img, p, h1, h2, h3, h4, h5, h6, div, a, input, form, fieldset, legend, table, tr, th {
+	margin: 0;
+	padding: 0
+}
+
+body {
+	background-color: #f9f9f9;
+	text-align: center;
+	font-family: Trebuchet, Sans-Serif;
+	font-weight: normal;
+	line-height: 1.2;
+	color: #fff
+}
+
+div#head {
+	width: 400px;
+	height: 110px;
+	color: #222;
+	margin: 0 auto 20px auto
+}
+
+div#head h1 {
+	opacity : 0.80;
+	font-size: 96px;
+	font-weight: bold;
+	color: #245BFF;
+}
+
+fieldset {
+	border: 1px solid #ccc;
+	padding: 20px 0
+}
+
+legend {
+	text-align: left;
+	margin: 0 0 0 10px;
+	padding: 0 10px;
+}
+
+div#head p {
+	font-size: 15px;
+	color: #999;
+	text-align: left;
+	margin-left: 3px
+}
+
+div#head p#admin {
+	float: right;
+	color: #ff807f;
+	margin-right: 3px;
+}
+
+div#login {
+	width: 400px;
+	color: #222;
+	margin: 50px auto;
+}
+
+#titolo {
+	font-size: 20px;
+	font-weight: bold;
+	color: #444;
+	margin-bottom: 20px
+}
+
+.infoChamps {
+	font-family: monospace;
+	margin-bottom: 10px
+}
+
+.messageBad {
+	text-align: center;
+	font-size: 14px;
+	color: #ff403f;
+	margin-bottom: 15px
+}
+
+p.messageOk {
+	text-align: center;
+	font-size: 14px;
+	
+	color: #090
+}
+
+a { text-decoration: none; color: #888; }
+a:hover { text-decoration: underline; }
+
+input {
+	background: #e9e9e9;
+	color: #444;
+	border: 1px solid #ccc;
+	padding: 2px;
+}
+
+p.infoChamps input:hover {
+	background: #f4f4f4;
+}
+
+p.infoChamps input:focus {
+	background: #f4f4f4;
+	outline: none;
+}
+
+input.bottone {
+	background: #e9e9e9;
+	color: #444;
+	border: 1px solid #ccc;
+	padding: 4px;
+}
+
+input.bottone:hover {
+	background: #f4f4f4;
+	cursor:pointer;
+}
+
+input.bottone:active {
+	font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

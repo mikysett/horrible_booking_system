@@ -1,0 +1,585 @@
+body, img, p, h1, h2, h3, h4, h5, h6, div, a, input, form, fieldset, legend, table, tr, th {
+	margin: 0;
+	padding: 0
+}
+
+table {
+	border-collapse: collapse;
+}
+
+body {
+	background-color: #efefef;
+	font-size: 17px;
+	font-family: Courier;
+	font-weight: normal;
+	line-height: 1.2;
+	color: #222
+}
+
+.testata_booking {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	text-align: left;
+	background: #fefefe;
+	padding: 4px 8px;
+	font-weight: bold;
+	border-bottom: 1px #444 solid;
+	z-index: 100;
+}
+
+.riga_tab {
+	position: absolute;
+	opacity: 0.3;
+	z-index: 3
+}
+
+.riga_cam:hover {
+	background: #a4bbff;
+}
+
+.over_cam {
+	background: #ffbbbb;
+}
+
+.na_cam, .camera_tab {
+	position: relative;
+	text-align: left;
+	border-bottom: 1px #efefef solid;
+	border-right: 3px #6F93FE solid;
+	font-size: 10px;
+	padding: 4px;
+	background: #ddd;
+	width: 62px;
+	overflow: visible;
+	box-sizing: border-box;
+}
+
+.vest_cam {
+	float: right;
+}
+
+.fixed_menu {
+  position: fixed;
+  top: 29px;
+  left: 0;
+  height: 82px;
+}
+
+#fixed_calendar {
+	margin-left: 62px;
+}
+
+#fixed_camere {
+	top: 112px;
+}
+
+.data_refresh {
+	float: right;
+	margin-right: 20px;
+	text-align: right;
+	min-width: 450px
+}
+
+/* INIZIO PRENOTAZIONI */
+.booking {
+	position: relative;
+	top: 30px;
+	left: 61px;
+	float: left;
+	color: #000;
+	font-family: Courier;
+	padding-left: 60px;
+	z-index: 99;
+}
+
+.table_cam {
+	font-family: Courier;
+	z-index: 5;
+}
+
+.day_tab {
+	clear:both;
+}
+
+.day {
+	height: 52px;
+	width: 31px;
+	text-align: center;
+	overflow: hidden;
+	background: #efefef;
+	padding-top: 4px;
+	border-right: 1px solid #ccc;
+	border-bottom: 3px solid #ccc;
+	box-sizing: border-box;
+	float: left;
+	margin:0
+}
+
+.vest, .vest_r, .vest_i {
+	float: right;
+	font-weight: bold;
+}
+.vest_r {
+	color: #ff0000;
+}
+.vest_i {
+	font-style: italic;
+	font-weight: normal;
+}
+
+.oscurata {
+	color: #ccc;
+}
+
+.no_find {
+	opacity: 0.4;
+}
+
+
+.oscurata:hover, .no_find:hover {
+	opacity: 1;
+}
+
+.pre:hover, .table_cam div:hover, .booking .pre:hover {
+	overflow: visible;
+}
+
+.mese {
+	height: 40px;
+	float:left;
+	height: 30px;
+	padding: 8px 8px;
+	overflow: hidden;
+	background: #fcfcfc;
+	font-weight: normal;
+	border-right: 1px solid #ccc;
+	border-bottom: 3px solid #ccc;
+	box-sizing: border-box;
+}
+
+.spazio_per_date {
+	height: 81px;
+}
+
+.all_pre {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 3;
+}
+
+.pre {
+	position: absolute;
+	box-sizing: border-box;
+	background: #ddd;
+	overflow: hidden;
+	text-align: left;
+	font-size: 11px;
+	border: 1px solid #777;
+	border-radius: 3px;
+	padding: 1px 2px;
+	box-shadow: 2px 1px 4px 0px rgba(127, 127, 127, 0.3);
+}
+
+.pre a {
+position:relative;
+z-index:1;
+text-decoration:none
+}
+ 
+.pre:hover, .camera_tab:hover {
+z-index:2;
+}
+
+.pre:hover .dati {
+	display: none;
+}
+ 
+.info, .camera_tab span {
+display: none
+}
+
+.info_nome {
+    padding: 4px;
+    background: #6F93FE;
+    color: #fff;
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+
+.info_date {
+	float: right;
+}
+
+.info_pax {
+	clear:both;
+	float: left;
+}
+
+.info_arr_vest {
+	float:right;
+}
+
+.info_gru, .info_nt_gru, .info_nt {
+	box-shadow: 2px 1px 1px 0px rgba(127, 127, 127, 0.2);
+}
+
+.info_gru {
+	clear:left;
+	float: left;
+	margin: 10px 0 5px;
+	padding: 5px;
+}
+
+.info_nt_gru {
+	clear:right;
+	float: right;
+	margin: 10px 0 5px 5px;
+	padding: 5px;
+}
+
+.info_ag {
+	color: #013ae4;
+	text-align: right;
+	padding: 0 1px 4px 0;
+	font-style: italic;
+}
+
+.info_nt {
+	clear:both;
+	float: left;
+	background: #dfdfdf;
+	margin-top: 5px;
+	padding: 5px;
+}
+
+.info_um {
+	clear:both;
+	padding-top: 5px;
+}
+
+.pre:hover .info, .camera_tab:hover span {
+	display:block;
+	position:absolute;
+	top:1em; left:0em; width:18em;
+	border:1px solid #999;
+	background-color:rgba(255,255,255,0.9);
+	box-shadow: 2px 1px 4px 0px rgba(127, 127, 127, 0.3);
+	border-radius: 4px;
+	color:#222;
+	text-align: left;
+	padding:5px;
+	z-index: 6
+}
+
+.camera_tab:hover span {
+top:0em; left:6em; width:18em;
+}
+
+.info_note {
+	font-size: 20px;
+	float:left;
+	height: 10px
+}
+
+.we {
+	background: #FFFF30;
+}
+
+
+.we_osc {
+	background: #f1f1c7;
+}
+
+
+/* INIZIO CORPO */
+
+
+/* FINE CORPO */
+a { text-decoration: none; color: inherit; }
+a:hover { text-decoration: underline; }
+
+/* MESSAGGI DI ERRORE, AVVERTIMENTO E CONFERMA */
+
+.prob_book, .note_gruppi {
+	width: 62px;
+	height: 41px;
+	padding: 10px 2px;
+	position:fixed;
+	top: 29px;
+	text-align: center;
+	z-index: 100;
+	font-family: arial;
+	background: #fcfcfc;
+	box-sizing: border-box;
+   border-right: 1px solid #ccc;
+}
+
+.note_gruppi {
+	top: 70px;
+	z-index: 99;
+	padding: 2px;
+   border-bottom: 3px solid #ccc;
+}
+
+
+.note_gruppi .num_note_gruppi {
+	font-size: 25px;
+	color: #6F93FE;
+}
+
+.note_gruppi:hover .num_note_gruppi {
+	padding: 5px;
+	background: #6F93FE;
+	color: #fff;
+}
+
+.note_gruppi:hover .num_note_gruppi::after {
+	content: " NOTE PER GRUPPI";
+}
+
+.testa_nota {
+	float:left;
+}
+
+.gru_sx {
+	padding-left: 150px;
+}
+
+.gru_not {
+	color: #444;
+	font-size: 14px;
+	padding: 0 0 0 10px;
+}
+
+.gp_nome, .pb_gruppo {
+	padding: 1px 7px;
+}
+
+.pb_agenzia {
+	font-style: italic;
+	color:#999;
+}
+
+.prob_book_red .num_problemi::before {
+	content: "!";
+}
+
+.prob_book:hover, .note_gruppi:hover  {
+	overflow: visible;
+}
+
+.prob_book:hover .tutti_problemi, .note_gruppi:hover .all_note {
+	display:block;
+	position:absolute;
+	height: auto;
+	max-height: 550px;
+	overflow-y: auto;
+	top:1.4em;
+	left:1.4em;
+	width: 30em;
+	border:1px solid #999;
+	background-color:rgba(255,255,255,0.8);
+	box-shadow: 2px 1px 4px 0px rgba(127, 127, 127, 0.3);
+	border-radius: 4px;
+	color:#222;
+	text-align: left;
+	padding:5px;
+}
+
+.prob_book:hover .tutti_problemi {
+	width: 35em;
+}
+
+div.prob_book:hover div.problemi_pre, .note_gruppi:hover .note_gru {
+display:block;
+}
+
+.problemi_pre, .note_gru {
+	display: none;
+	width: auto;
+	height: auto;
+	max-width: initial;
+	padding: 5px 5px;
+}
+
+.note_gru:hover, .problemi_pre:hover {
+	background:#fff;
+	box-shadow: 2px 1px 4px 0px rgba(127, 127, 127, 0.3);
+}
+
+.prob_book .prob {
+	color: #444;
+	font-size: 14px;
+	
+}
+
+.prob_book .progressivo {
+	color: #FE4F4F;
+	
+}
+
+.num_problemi {
+	color: #FE4F4F;
+	font-size: 25px;
+}
+
+.prob_book:hover .num_problemi::after {
+	content: " PROBLEMI TROVATI";
+}
+.prob_book:hover .num_problemi {
+	padding: 5px;
+	background: #FE4F4F;
+	color: #fff;
+}
+
+.c_0{background:#FFB477}
+.c_1{background:#8FFF57}
+.c_2{background:#ED4AFF}
+.c_3{background:#FFFF82}
+.c_4{background:#98C0EC}
+.c_5{background:#D2CC99}
+.c_6{background:#D4FF8F}
+.c_7{background:#84F2D4}
+.c_8{background:#8FFFC6}
+.c_9{background:#FFEE6B}
+.c_10{background:#BA81FF}
+.c_11{background:#FF75FF}
+
+.cn_0{color:#000}
+.cn_1{color:#f00}
+.cn_2{color:#ff0}
+.cn_3{color:#00f}
+.cn_4{color:#FFA0FF}
+
+.bk_prima, .bk_dopo, .linea_mese {
+	position: absolute;
+	opacity: 0.7;
+	height: 100%;
+	background: #EDEDED;
+}
+
+.linea_mese {
+	background: #6F93FE;
+	opacity: 1;
+	width: 1px;
+	z-index: 3
+}
+
+.linea_cam {
+	position:absolute;
+	opacity: 1;
+	height: 1px;
+	z-index: 3
+}
+
+.bk_na {
+	position: absolute;
+	background: #E6E6E6;
+}
+
+.celle_settimane {
+	position: absolute;
+	 background-image: url('img/celle_settimane.png');
+	 background-repeat: repeat;
+	 background-position: top left; 
+	 z-index: 1;
+}
+
+.pre_op {
+	border-left: 3px solid #F5DC03;
+}
+
+.pre_over, .camera_tab {
+	background: #ffbbbb;
+}
+
+.ag_brd {
+	border: 1px solid #03a9f4;
+}
+
+.bench {
+	font-size: 10px;
+	font-weight:normal;
+}
+
+/* per speciali */
+.freccia_sx {
+	font-size: 10px;
+	font-weight: bold;
+	float: left;
+	background: #046F08;
+	color: #fff;
+	padding: 2px 4px 0;
+	border-radius: 8px;
+	margin-right: 2px;
+}
+.freccia_dx {
+	font-size: 10px;
+	font-weight: bold;
+	float: right;
+	background: #046F08;
+	color: #fff;
+	padding: 2px 4px 0;
+	border-radius: 8px;
+	margin-left: 2px;
+}
+.cam_agg {
+	font-size: 10px;
+	font-weight: bold;
+	float: right;
+	background: #a00;
+	color: #fff;
+	padding: 2px 4px 0;
+	border-radius: 8px;
+	margin-left: 2px;
+}
+.share_num {
+	font-size: 10px;
+	font-weight: bold;
+	float: left;
+	background: #3F51B5;
+	color: #fff;
+	padding: 2px 4px 0;
+	border-radius: 8px;
+	margin-right: 2px;
+}
+
+.share_info {
+	clear: both;
+	background: #dfdfdf;
+	margin-bottom: 2px;
+}
+
+.date_share {
+	float: left;
+	background: #6F93FE;
+	color: #fff;
+	padding: 2px 3px;
+	margin-right: 3px;
+}
+
+.arr_share {
+	float: right;
+	background: #6F93FE;
+	color: #fff;
+	padding: 2px 3px;
+	margin-left: 3px;
+}
+
+.nome_share {
+	float: left;
+	padding-top: 2px;
+}
+
+.pax_share {
+	float: right;
+	padding-top: 2px;
+	margin: 0 3px;
+}
+
+.fix_share {
+	display:block;
+	clear:both;
+}

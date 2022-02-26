@@ -1,0 +1,239 @@
+body, img, p, h1, h2, h3, h4, h5, h6, div, a, input, form, fieldset, legend, table, tr, th {
+	margin: 0;
+	padding: 0
+}
+
+table {
+	border-collapse: collapse;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+a:hover {
+	text-decoration: none;
+	color: #6F93FE
+}
+
+body {
+	width: 98%;
+	background-color: #fff;
+	text-align: left;
+	font-size: 12pt;
+	font-family: Arial;
+	font-weight: normal;
+	color: #000;
+	margin: 0 auto;
+}
+
+.menu {
+	border-bottom: 1px solid #333;
+	margin-bottom: 10pt;
+	clear: both;
+}
+
+.data_stampa {
+	float: right;
+}
+
+.nome_gruppo {
+	font-size: 20pt;
+	font-weight: bold;
+}
+
+.dati_gruppo {
+	font-size: 14pt;
+}
+
+.arrangiamento_gruppo {
+	font-size: 14pt;
+	float: right;
+}
+
+.riepilogo_gruppo {
+	font-size: 14pt;
+	margin: 10pt 0;
+}
+
+.rooming_list {
+	width: 100%;
+	margin-bottom: 15pt;
+	box-sizing: border-box;
+}
+
+.center {
+	text-align: center;
+}
+
+.testa_rl {
+	font-size: 20pt;
+}
+
+.escludi_cam {
+	float: left;
+	padding: 10px 0 10px;
+}
+
+.testa_stat {
+	font-size: 15pt;
+	margin-bottom: 10px;
+}
+
+.testa_stat_dx {
+	float: right;
+}
+
+td, th {
+	padding: 3pt;
+}
+
+.small_td {
+	width: 20pt;
+}
+
+.medium_td {
+	width: 40pt;
+}
+
+.prog {
+	font-family: monospace;
+	text-align: right;
+	color: #666;
+}
+
+thead tr {
+	border-bottom: 2pt solid #444;
+}
+
+tbody tr {
+	border-bottom: 1pt solid #aaa;
+}
+
+tbody tr:hover {
+	background: #E4EBFF;
+}
+
+.tr_top_bold {
+	border-top: 2pt solid #aaa;
+}
+
+.tr_left_bold {
+	border-left: 2pt solid #aaa;
+}
+
+.tr_bottom_bold {
+	border-bottom: 2pt solid #aaa;
+}
+
+
+.stat {
+	margin: 5pt 0 20pt;
+	font-size: 12pt;
+	border: 1pt solid #999;
+	font-family: monospace;
+	text-align: center;
+}
+
+.mese_stat {
+	font-size: 14pt;
+}
+
+.stat th {
+	padding: 2pt;
+	border-right: 1pt solid #999;
+   border-bottom: 2pt solid #ccc;
+	font-weight: normal;
+}
+
+.stat td {
+	padding: 2pt;
+	border: 1pt solid #999;
+}
+
+.stat tr:hover {
+	background: #E4EBFF
+}
+
+.we {
+	background: #eee;
+}
+
+td.bordo_we {
+	border-right: 1pt solid #d22114;
+}
+
+.riga_scura {
+	background: #fafafa;
+}
+
+.fine_blocco {
+	border-bottom: 3pt solid #ccc;
+}
+
+.nome_riga_stat {
+	font-size: 8pt;
+	text-align: right;
+}
+
+.no_print {
+	padding: 8pt 0;
+	font-size: 10pt;
+}
+
+.no_print .bottone {
+	padding: 2pt;
+	font-size: 8pt;
+	float: right;
+}
+
+.data_menu_print {
+	padding: 2pt;
+	font-size: 8pt;
+	width: 50pt;
+}
+
+@media print {
+	.no_print {
+		display: none;
+	}
+	
+	.stat {
+		font-size: 9pt;
+		page-break-inside: avoid;
+	}
+	.stat tr:hover, tbody tr:hover {
+		background: none;
+	}
+	
+	.no_breaking {
+		page-break-inside: avoid;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,260 @@
+body, img, p, h1, h2, h3, h4, h5, h6, div, a, input, form, fieldset, legend, table, tr, th {
+	margin: 0;
+	padding: 0
+}
+
+table {
+	border-collapse: collapse;
+}
+
+body {
+	background-color: #F6F6F6;
+	text-align: center;
+	font-size: 17px;
+	font-family: Arial;
+	font-weight: normal;
+	line-height: 1.2;
+	color: #222
+}
+
+.cal_sx {
+	box-sizing: border-box;
+	width: 20%;
+	float: left;
+	padding:9px 0;
+
+}
+
+.menu_container {
+	box-sizing: border-box;
+	text-align: left;
+	width: 80%;
+	padding: 20px;
+	float: right;
+}
+
+.titolo_sez {
+	box-sizing: border-box;
+	border-bottom: 3px solid #6F93FE;
+}
+
+.titolo_sez span {
+	background: #6F93FE;
+	padding: 6px 25px;
+	color: #fefefe;
+	box-shadow: 1px 1px 4px 0px rgba(127, 127, 127, 0.3);
+	border-radius: 3px 3px 3px 0;
+}
+
+.opz_menu {
+	display: block;
+	box-sizing: border-box;
+	margin: 10px auto;
+	padding: 5px;
+	width: 85%;
+}
+
+.menu {
+	box-sizing: border-box;
+	width: 300px;
+	float: left;
+	background: #fefefe;
+	border: 1px solid #6F93FE;
+	border-top: 0 solid #6F93FE;
+	box-shadow: 3px 2px 12px 0px rgba(127, 127, 127, 0.2);
+	border-radius: 0 0 3px 3px;
+	margin-right: 15px;
+}
+
+.titolo_menu {
+	box-sizing: border-box;
+	background: #eee;
+	border-bottom: 1px solid #ddd;
+	color: #6F93FE;
+	padding: 10px;
+}
+
+.show_cam {
+	margin: 10px 0;
+}
+
+.separatore {
+	margin: 5px 8px;
+	border-bottom: 2px solid #eee;
+}
+
+.testo_menu {
+    padding: 5px 20px 0;
+    color: #666;
+}
+
+.bottone_riga {
+	display:block;
+   margin: 10px 20px;
+}
+
+.campi_menu {
+	display: block;
+	box-sizing: border-box;
+	margin: 10px auto;
+	padding: 5px;
+	width: 85%;
+}
+
+.pulsanti_bottom {
+	background: #eee;
+	text-align: right;
+	border-top: 2px solid #ddd;
+	border-radius: 0 0 3px 3px;
+	padding: 0;
+}
+
+.opzioni_menu {
+	text-align:left;
+	height: 25px;
+	padding: 5px 15px 0;
+	font-size: 15px;
+	clear: left;
+	color: #888;
+}
+
+.link_menu, .menu_checkbox {
+	display: block;
+	padding: 10px 20px;
+	color: #666;
+}
+
+.link_menu::before {
+	content: "> ";
+	font-weight: bold;
+	color: #6F93FE;
+}
+
+.link_menu:hover {
+	color: #6F93FE;
+	text-decoration: none;
+}
+
+.stagione_cal {
+	float: right;
+	margin: 0 0 10px 10px;
+}
+
+.mesi_stagione {
+	float: right;
+}
+
+.container_mese {
+	float:left;
+	width:30px;
+	margin: 0 2px;
+	overflow: hidden;
+	box-shadow: 2px -2px 6px 0px rgba(127, 127, 127, 0.1);
+   border-radius: 3px 3px 0 0;
+}
+
+.mese_bk {
+-ms-writing-mode: tb-rl; 
+-webkit-writing-mode: vertical-rl;
+-moz-writing-mode: vertical-rl;
+-ms-writing-mode: vertical-rl;
+writing-mode: vertical-rl;
+	float: left;
+	width: 30px;
+	height: 50px;
+	font-family: Courier;
+	overflow: hidden;
+	background: #6F93FE;
+	color: #fefefe;
+	box-sizing: border-box;
+}
+
+.mese_bk:hover {
+	color: #6F93FE;
+	background: #fefefe;
+}
+
+.settimana_bk {
+	float: left;
+	width: 30px;
+	height: 50px;
+	font-family: Courier;
+	overflow: hidden;
+	background: #eee;
+	color: #888;
+	box-sizing: border-box;
+	padding: 8px 0;
+	border: 1px solid #ddd;
+}
+
+.settimana_bk:hover {
+	background: #f4f4f4;
+	color: #666;
+}
+
+.nome_mese {
+	width: 30px;
+	height: 50px;
+	position: relative;
+	right: -20px;
+	box-sizing: border-box;
+	background: none;
+	border: 0;
+}
+
+.nome_stagione {
+	width: 140px;
+	height: 30px;
+	position: relative;
+	top: -30px;
+	box-sizing: border-box;
+	background: none;
+	border: 0;
+}
+
+.date_settimana {
+	width: 30px;
+	height: 50px;
+	position: relative;
+	top: -50px;
+	box-sizing: border-box;
+	background: none;
+	border: 0;
+}
+
+input.date_settimana:hover, input.nome_mese:hover, input.nome_stagione:hover {
+	background: none;
+}
+
+.intera_stagione {
+	text-align: left;
+	box-sizing: border-box;
+	width: 140px;
+	height: 30px;
+	overflow: hidden;
+	background: #fefefe;
+	color: #6F93FE;
+	margin: 2px;
+	box-shadow: 2px 2px 6px 0px rgba(127, 127, 127, 0.1);
+   border-radius: 2px;
+}
+
+.intera_stagione:hover {
+	color: #fefefe;
+	background: #6F93FE;
+}
+
+
+.intera_stagione span {
+	display: block;
+	box-sizing: border-box;
+	width: 140px;
+	height: 30px;
+	padding: 7px;
+}
+
+
+
+
+
+

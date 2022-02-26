@@ -1,0 +1,9 @@
+**/.vscode/
+**/.DS_Store
+**/test-*/
+**/test-*
+**/obj/*
+**/target/
+**/OLD*
+risorse/db_backups/
+risorse/graphics/

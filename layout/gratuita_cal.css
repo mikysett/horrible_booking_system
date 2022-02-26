@@ -1,0 +1,65 @@
+table.tab_gratis {
+	margin: 10px;
+	border-collapse: collapse;
+	border: 4px solid #ccc;
+	border-radius: 5px;
+}
+
+.nome_gruppo {
+	margin: 10px;
+	font-size: 25px;
+}
+
+.tab_gratis td, .tab_gratis th {
+	border: 1px solid #ddd;
+	padding: 3px;
+}
+
+.b_top {
+	border-top: 3px solid #ddd;
+}
+
+.tab_gratis th {
+	text-align: right;
+}
+
+.tab_gratis td {
+	text-align: center;
+}
+
+.info_gratis {
+	text-align: left;
+	margin: 10px;
+}
+
+.no_print {
+	padding: 8pt 0;
+	font-size: 10pt;
+}
+
+.no_print .bottone {
+	padding: 2pt;
+	font-size: 8pt;
+	float: right;
+}
+
+.data_menu_print {
+	padding: 2pt;
+	font-size: 8pt;
+	width: 50pt;
+}
+
+.separatore {
+	height: 3px;
+	background: #ddd;
+}
+
+@media print {
+	.no_print {
+		display: none;
+	}
+	
+	.tab_gratis {
+		page-break-inside: avoid;
+	}
+}

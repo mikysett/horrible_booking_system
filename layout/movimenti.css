@@ -1,0 +1,234 @@
+body, img, p, h1, h2, h3, h4, h5, h6, div, a, input, form, fieldset, legend, table, tr, th {
+	margin: 0;
+	padding: 0
+}
+
+body {
+	width: 80%;
+	background-color: #fff;
+	text-align: left;
+	font-size: 10pt;
+	font-family: Arial;
+	font-weight: normal;
+	color: #000;
+	margin: 0 auto 20pt;
+}
+
+.menu {
+	border-bottom: 1pt solid #333;
+	margin-bottom: 5pt;
+}
+
+.data_stampa {
+	float: right;
+}
+
+.mo_lista, .mo_lista div {
+	box-sizing: border-box;
+}
+
+.mo_testa_lista {
+	background: #efefef;
+	border-radius: 3pt 3pt 0 0;
+}
+
+.mo_testa_gruppo {
+	background: #efefef;
+	border-radius: 3pt 3pt 0 0;
+}
+
+.mo_riga {
+	border-top: 1pt solid #aaa;
+}
+
+.mo_riga:hover {
+	background: #e3e3e3;
+}
+
+.mo_testa_lista div, .mo_testa_gruppo div, .mo_riga div {
+	padding: 1pt 3pt;
+	border-right: 1pt solid #333;
+}
+
+.mo_testa_lista, .mo_testa_gruppo {
+	font-size: 8pt;
+}
+
+.mo_testa_gruppo .li_nome {
+	font-size: 8pt;
+}
+
+.li_nome, .li_agenzia, .li_gruppo, .li_camera, .li_vestizione, .li_pax, .li_data, .li_arr, .li_note {
+	float: left;
+	min-height: 14pt;
+}
+
+div.li_camera, div.li_pax, div.li_data, div.li_arr {
+	text-align: center;
+	padding: 1pt 0;
+}
+
+.li_nome, .li_agenzia, .li_gruppo {
+	max-height: 11pt;
+	overflow: hidden;
+}
+
+.li_note {
+	float: right;
+	font-size: 7pt;
+	max-width: 34%;
+}
+
+.li_nome {width: 17%}
+.li_agenzia {width: 17%}
+.li_gruppo {width: 16%}
+.li_camera {width: 6%}
+.li_vestizione {width: 6%}
+.li_pax {width: 3%}
+.li_data {width: 6%}
+.li_arr {width: 3%}
+
+div.li_note {
+	border-right: 0 solid #fff;
+}
+
+.mo_gruppo {
+	margin-top: 5pt;
+	border: 1pt solid #333;
+	border-radius: 3pt;
+	overflow: hidden;
+}
+
+.mo_signal {
+	padding: 3pt;
+	font-size: 10pt;
+}
+
+.mo_testa_gruppo {
+	clear: both;
+}
+
+
+.mo_riepilogo {
+	width: 40%;
+	margin-top: 5pt;
+	border: 1pt solid #333;
+	border-radius: 3pt;
+	overflow: hidden;
+}
+
+.tipo_riep,.pax_riep, .cam_riep {
+	padding: 1pt 3pt;
+	float: left;
+}
+
+.testa_riep {
+	background: #efefef;
+}
+
+.riga_riep {
+	border-top: 1pt solid #aaa;
+}
+
+.no_border {
+	border: 0 solid #fff;
+}
+
+.pax_riep, .cam_riep {
+	float: right;
+	text-align: center;
+	min-height: 10pt;
+	width: 25pt;
+	border-left: 1pt solid #333;
+}
+
+.float_dx {
+	float: right;
+}
+
+.bordo_top_bold {
+	border-top: 1pt solid #333;
+}
+
+.testa_giorno {
+	height: 12pt;
+	margin-top: 7pt;
+}
+
+.data_giorno {
+	float: right;
+}
+
+.info_giorno {
+	float: left;
+}
+
+div.cn_1{border-right: 3pt solid #f00}
+div.cn_2{border-right: 3pt solid #ff0}
+div.cn_3{border-right: 3pt solid #00f}
+div.cn_4{border-right: 3pt solid #FFA0FF}
+
+.no_print {
+	padding: 8pt 0;
+	font-size: 10pt;
+}
+
+.no_print .bottone {
+	padding: 2pt;
+	font-size: 8pt;
+	float: right;
+}
+
+@media print {
+	.no_print {
+		display: none;
+	}
+	
+	body {
+		width: 100%;
+		font-size: 8pt;
+		margin: 0 auto;
+	}
+	
+	.mo_testa_lista, .mo_testa_gruppo {
+		font-size: 6pt;
+	}
+	
+	.mo_riga {
+		page-break-inside: avoid;
+	}
+	
+	.mo_riga:hover {
+		background: none;
+	}
+	
+	.li_nome, .li_agenzia, .li_gruppo, .li_camera, .li_vestizione, .li_pax, .li_data, .li_arr, .li_note {
+		min-height: 11pt;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
