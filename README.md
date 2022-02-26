@@ -41,3 +41,6 @@ Somehow the site still works on:
 - PHP 7.4.3
 - Mysql 8.0.28
 - Apache 2.4.41
+
+## License
+[MIT License](https://choosealicense.com/licenses/mit/)
